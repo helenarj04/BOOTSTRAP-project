@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     overflow-y: hidden;
+    color: white;
 }
 
 :root {
@@ -38,16 +39,19 @@ header nav ul li:hover {
 }
 
 .clicked-hamburger {
-    width: 400px;
+    width: 350px;
     height: 800px;
-    background-color: var(--dark-grey-color);
-    /* transform: translate(390%, -20%); */
-    transform: translate(290%, -20%);
+    background-color:#181818;
+   z-index: 5;
+    transform: translate(345%, -15%);
 
 }
-/* .clicked-hamburger.active{
-    transform: translate(290%, -20%);
+/* .clicked-hamburger{
+    transform: translate(450%, -15%);
 } */
+.hamburger-info p{
+color: grey;
+}
 @media screen and (max-width:1280px) {
     header nav ul {
         width: 100%;
