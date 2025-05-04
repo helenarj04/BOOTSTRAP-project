@@ -1,6 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    overflow-y: hidden;
+}
+
+:root {
+    --dark-grey-color: #111111;
+    --yellow-color: #E3FF04;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    padding: 30px 70px;
+    background-color: var(--dark-grey-color);
+    color: white;
+}
+
+header nav ul {
+    border: 3px solid var(--yellow-color);
+    gap: 70px;
+    width: 90%;
+
+}
+
+header nav ul li:hover {
+    color: var(--yellow-color);
+}
+
+.hamburger-menu {
+    background-color: var(--yellow-color);
+    width: 40px;
+}
+
+.clicked-hamburger {
+    width: 400px;
+    height: 800px;
+    background-color: var(--dark-grey-color);
+    /* transform: translate(390%, -20%); */
+    transform: translate(290%, -20%);
+
+}
+/* .clicked-hamburger.active{
+    transform: translate(290%, -20%);
+} */
+@media screen and (max-width:1280px) {
+    header nav ul {
+        width: 100%;
+    }
 }
