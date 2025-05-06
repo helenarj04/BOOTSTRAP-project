@@ -10,3 +10,17 @@ ham.addEventListener('click', () => {
 closeHam.addEventListener('click', ()=>{
     hamDiv.classList.toggle('active'); 
 })
+// expertise-------------------------
+const typing = document.querySelector('#typing')
+
+    const text = 'We serve quality service in indie games.'
+    let i = 0
+    const speed = 50
+    function typeWriter (){
+        if (i<text.length){
+            typing.innerHTML += text.charAt(i);
+            i++;
+            setTimeout (typeWriter, speed);
+        }
+    }
+window.onload = typeWriter;

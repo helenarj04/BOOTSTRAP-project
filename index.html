@@ -37,7 +37,7 @@
         </div>
 
     </header>
-    <div class="clicked-hamburger p-5 d-flex flex-column gap-3 position-fixed">
+    <div class="clicked-hamburger p-5 d-flex flex-column gap-3 position-fixed top-0 end-0">
         <div class="hamburger-close d-flex align-items-end justify-content-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-x-lg"
                 viewBox="0 0 16 16">
@@ -118,44 +118,55 @@
     </section>
     <!-- --------------------our games ends--------------------- -->
     <!-- -------------------about starts--------------------- -->
-    <section class="about position-relative">
-        <div class="about-container d-flex justify-content-between mt-5 pt-5">
-            <div class="about-left-img">
-                <img src="images/img-1 (1).png" alt="" title="">
+    <section class="about position-relative overflow-x-hidden overflow-y-hidden">
+        <div class="about-container d-flex justify-content-between mt-5">
+            <div class="about-left   d-none d-lg-block">
+                <img src="images/img-1 (1).png" alt="" title="" class="rounded-4" width="100%">
+
             </div>
-            <div class="about-info">
-                <h1>About</h1>
-                <p>We are a indie creative
-                    studio from Iran.</p>
-            </div>
-            <div class="about-right-img ">
-                <div class="about-right-img-behind position-absolute opacity-50">
-                    <img src="images/img-2 (1).png" alt="" title="">
-                    
+            <div class="about-info d-flex flex-column justify-content-start">
+                <h2 class="fw-bolder">About</h2>
+                <div class="about-info-main">
+                    <p class="fw-bold">We are a indie creative
+                        studio from <strong>New York.</strong></p>
+                    <span class="pt-5 fs-4 fw-bold">Mission & Vision</span>
+                    <div class="about-paragraph d-flex gap-5 pt-4 align-items-center justify-content-center">
+                        <p class="opacity-50">Indie games, short for independent video games, are typically created by
+                            individuals.</p>
+                        <p class="opacity-50">They often emphasize innovation, creativity, and unique game play
+                            experiences.</p>
+                    </div>
+                    <button class="get-In-Touch pt-3 pb-3 rounded-4">Get In Touch</button>
                 </div>
-                <div class="about-right-img-front position-absolute">
-                    <img src="images/img-3.png" alt="" title="">
+
+            </div>
+            <div class="about-right">
+                <div class="about-right-behind position-absolute end-0 top-0 opacity-25">
+                    <img src="images/img-2 (1).png" alt="" title="" class="rounded-4" width="100%">
+                </div>
+                <div class="about-right-front position-absolute end-0">
+                    <img src="images/img-3.png" alt="" title="" class="rounded-4" width="100%">
                 </div>
             </div>
-            
         </div>
     </section>
+    <!-- -------------------about ends--------------------- -->
+    <!-- -------------------expertise starts--------------------- -->
+     <section class="expertise">
+        <div class="expertise-container d-flex flex-column">
+            <div class="our-expertise d-flex justify-content-between">
+<div class="our-expertise-text">
+<span class="fw-bolder">OUR EXPERTISE</span>
+<p id="typing"></p>
+</div>
+<button class="get-In-Touch pt-3 pb-3 rounded-4">Get In Touch</button>
+            </div>
+            <div class="services">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
+     </section>
+    <!-- -------------------expertise ends--------------------- -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -163,5 +174,12 @@
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
+
+
+
+
+
+
 
 </html>
