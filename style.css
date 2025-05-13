@@ -252,10 +252,15 @@ header nav ul li:hover {
 }
 
 .get-In-Touch {
-    background-color: var(--dark-grey-color);
-    border: 2px solid var(--yellow-color);
+    background-color: transparent;
+    border: 1px solid var(--yellow-color);
     width: 150px;
     font-size: 15px;
+}
+
+.get-In-Touch:hover {
+    background-color: var(--yellow-color);
+    color: black;
 }
 
 .about-info-main {
@@ -283,7 +288,175 @@ header nav ul li:hover {
 
 /* <!-- -------------------about ends--------------------- --> */
 /* <!-- -------------------expertise starts--------------------- --> */
-.our-expertise-text span{
+.expertise {
+    background-color: #181818;
+}
+
+.expertise-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.our-expertise-text span {
     color: var(--yellow-color);
 }
+
+#typing {
+    width: 80%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--yellow-color);
+}
+
+.game-design-paragraph {
+    width: 300px;
+}
+
+.game-design-title svg,
+.our-expertise-text span svg,
+.why-us-info>span>svg {
+    fill: var(--yellow-color);
+}
+
+@media screen and (max-width: 990px) {
+    .our-expertise {
+        flex-direction: column;
+    }
+
+    .expertise-container {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .game-design-container {
+        justify-content: start !important;
+    }
+
+    #typing {
+        font-size: 25px !important;
+    }
+
+    .game-design {
+        flex-direction: column;
+    }
+
+    .game-design-paragraph {
+        width: 80%;
+    }
+}
+
 /* <!-- -------------------expertise ends--------------------- --> */
+/* <!-- -------------------why us starts--------------------- --> */
+.why-us-img img {
+    width: 100%;
+
+}
+
+.why-us-info span {
+    color: var(--yellow-color);
+}
+
+.why-us-info {
+    padding: 50px 100px;
+}
+
+.why-us-info p {
+    width: 80%;
+}
+
+.why-us-info ul li {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.why-us-info ul svg {
+    opacity: 25%;
+}
+
+@media screen and (max-width:680px) {
+    .why-us-info-items {
+        flex-direction: column;
+    }
+
+    .why-us-info {
+        padding: 50px 20px;
+    }
+}
+
+/* <!-- -------------------why us ends--------------------- --> */
+/* <!-- -------------------gaming studio starts--------------- ------ --> */
+.empty {
+    background-color: var(--yellow-color);
+    height: 3px;
+}
+
+/* <!-- -------------------gaming studio ends--------------------- --> */
+/* <!-- -------------------project starts--------------------- --> */
+.project-container {
+    margin: 10px 20px;
+
+}
+
+.project {
+    margin-top: 100px;
+}
+
+.project-img img {
+    width: 100%;
+
+}
+
+.project-info p {
+    width: 40%;
+}
+
+.project-name span {
+    color: var(--yellow-color);
+}
+
+.project-line {
+    width: 90%;
+    height: 1px;
+    background-color: var(--yellow-color);
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+    .project-info p {
+        width: 40%;
+    }
+
+    .project-container {
+        padding: 10px;
+    }
+}
+
+/* <!-- -------------------project ends--------------------- --> */
+/* <!-- -------------------more projects starts--------------------- --> */
+.more-projects {
+    width: 160px;
+    height: 160px;
+    border: 2px solid var(--yellow-color);
+    text-align: center;
+
+}
+
+.more-projects-container:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+.more-projects h6 {
+    color: var(--yellow-color);
+    line-height: 160px;
+}
+
+/* <!-- -------------------more projects ends--------------------- --> */
+/* <!-- -------------------feedback starts--------------------- --> */
+/* <!-- -------------------feedback ends--------------------- --> */
