@@ -12,7 +12,10 @@
     --dark-grey-color: #111111;
     --yellow-color: #E3FF04;
 }
-
+::selection{
+    background-color: var(--yellow-color);
+    color: #111111;
+}
 svg {
     cursor: pointer;
 }
@@ -146,7 +149,7 @@ header nav ul li:hover {
 
 @media screen and (max-width: 453px) {
     .header-container h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .header-img {
@@ -581,9 +584,10 @@ a {
         width: 50%;
         text-align: center;
     }
+
     .brands-container {
-    transform: translateY(-30%);
-}
+        transform: translateY(-30%);
+    }
 
 }
 
@@ -591,9 +595,10 @@ a {
     .brands-container {
         margin: 0px 50px;
     }
+
     .brands-container {
-    transform: translateY(-10%);
-}
+        transform: translateY(-10%);
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -609,4 +614,44 @@ a {
 
 /* <!-- -------------------brands ends--------------------- --> */
 /* <!-- -------------------insight starts--------------------- --> */
+.indie-img img {
+    width: 100%;
+}
+
+.indie {
+    border: 2px solid var(--yellow-color);
+    background-color: #181818;
+}
+
+.insights span,
+.insights span svg {
+    color: var(--yellow-color);
+    fill: var(--yellow-color);
+}
+
+/* .indie-img{
+    width: 100%;
+    height: 100%;
+} */
+.indie-text div div>span:nth-child(1) {
+    color: var(--yellow-color);
+}
+
 /* <!-- -------------------insight ends--------------------- --> */
+/* <!-- -------------------footer starts--------------------- --> */
+.facebook-icon{
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+.footer{
+    background-color: #181818;
+}
+.footer-main{
+    padding: 70px;
+}
+.get-in-touch-map{
+    
+}
+/* <!-- -------------------footer ends--------------------- --> */
