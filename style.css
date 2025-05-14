@@ -352,6 +352,7 @@ header nav ul li:hover {
 
 /* <!-- -------------------expertise ends--------------------- --> */
 /* <!-- -------------------why us starts--------------------- --> */
+
 .why-us-img img {
     width: 100%;
 
@@ -396,10 +397,31 @@ header nav ul li:hover {
     height: 3px;
 }
 
+.gaming-ai {
+    overflow-x: hidden;
+
+}
+
+.gaming-ai-text {
+    margin: 50px 0px;
+    width: 110vw;
+}
+
+.gaming-ai-text h6 {
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.gaming-ai-text span:nth-child(1) {
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
 /* <!-- -------------------gaming studio ends--------------------- --> */
 /* <!-- -------------------project starts--------------------- --> */
 .project-container {
-    margin: 10px 20px;
+    margin: 25px 20px;
 
 }
 
@@ -423,7 +445,7 @@ header nav ul li:hover {
 .project-line {
     width: 90%;
     height: 1px;
-    background-color: var(--yellow-color);
+    background-color: grey;
     margin: 0 auto;
 }
 
@@ -433,7 +455,7 @@ header nav ul li:hover {
     }
 
     .project-container {
-        padding: 10px;
+        padding-top: 20px;
     }
 }
 
@@ -459,4 +481,132 @@ header nav ul li:hover {
 
 /* <!-- -------------------more projects ends--------------------- --> */
 /* <!-- -------------------feedback starts--------------------- --> */
+.feedback {
+    background-color: #181818;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.feedback-user-img img,
+.feedback-user-img2 img,
+.feedback-background img {
+    width: 100%;
+}
+
+.feedback-stars svg {
+    fill: var(--yellow-color);
+}
+
+.feedback-sender span {
+    color: var(--yellow-color);
+}
+
+.feedback-info {
+    padding: 100px;
+    gap: 80px;
+}
+
+.feedback-title h6 {
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.feedback-title span,
+.feedback-title svg {
+    color: var(--yellow-color);
+    fill: var(--yellow-color);
+}
+
+.feedback-user-img {
+    background-color: var(--yellow-color);
+    height: 80px;
+}
+
+.feedback-user-img2 {
+    height: 80px;
+    background-color: #363636;
+}
+
+@media screen and (max-width:768px) {
+    .feedback-info {
+        padding: 30px;
+    }
+
+    .feedback-title h6 {
+        font-size: 25px;
+    }
+}
+
 /* <!-- -------------------feedback ends--------------------- --> */
+/* <!-- -------------------brands starts--------------------- --> */
+.brands h3 {
+    color: #111111;
+
+}
+
+hr {
+    color: #111111;
+    width: 80%;
+}
+
+.brands-container {
+    background-color: var(--yellow-color);
+    margin: 0px 120px;
+    transform: translateY(-50%);
+}
+
+.empty-line {
+    background-color: #111111;
+    width: 80%;
+    height: 1px;
+}
+
+.backers-img div {
+    width: 50px;
+    height: 50px;
+}
+
+.backers-img img {
+    width: 100%;
+}
+
+.backers-paragraph p,
+a {
+    color: #111111;
+}
+
+@media screen and (max-width:990px) {
+    .backers-paragraph p {
+        width: 50%;
+        text-align: center;
+    }
+    .brands-container {
+    transform: translateY(-30%);
+}
+
+}
+
+@media screen and (max-width:768px) {
+    .brands-container {
+        margin: 0px 50px;
+    }
+    .brands-container {
+    transform: translateY(-10%);
+}
+}
+
+@media screen and (max-width: 576px) {
+    .brands-container {
+        margin: 0px 10px;
+    }
+
+    .backers-paragraph p {
+        width: 100%;
+    }
+
+}
+
+/* <!-- -------------------brands ends--------------------- --> */
+/* <!-- -------------------insight starts--------------------- --> */
+/* <!-- -------------------insight ends--------------------- --> */
