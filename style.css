@@ -647,11 +647,20 @@ a {
 }
 .footer{
     background-color: #181818;
+    font-size: 13px !important; 
+    padding-bottom: 50px;
 }
 .footer-main{
     padding: 70px;
 }
-.get-in-touch-map{
-    
+.muzilla-footer-text p{
+    width: 70%;
+}
+.essential-item span:first-child, .essential-item>span>svg:first-child, .get-in-touch-map span, .get-in-touch-map span svg{
+color: var(--yellow-color);
+fill: var(--yellow-color);
+}
+.how-it-works{
+    color: white !important;
 }
 /* <!-- -------------------footer ends--------------------- --> */
