@@ -217,78 +217,21 @@ header nav ul li:hover {
 
 /* <!-- --------------------our games ends--------------------- --> */
 /* <!-- --------------------about starts--------------------- -->  */
-.about {
-    height: 100vh;
-    margin-top: 70px;
+/* .about{
+    margin-top: 100px;
 }
-
-.about-container {
-    flex-wrap: wrap;
+.about-container{
+    width: 100%;
 }
-
-.about-left {
-    transform: rotate(-15deg) translateX(-25%);
-}
-
-.about-right-behind {
-    transform: rotate(-15deg) translate(-50%, 30%);
-}
-
-.about-right-front {
-    transform: rotate(15deg) translateX(10%);
-    bottom: 10%;
-}
-
-.about-info {
-    transform: translateX(-30%);
-    width: 700px;
-}
-
-.about-info>h2 {
-    font-size: 150px;
-    opacity: 5%;
-    transform: translate(-20%, -20%);
-}
-
-.about-info p strong {
-    color: var(--yellow-color);
-}
-
 .get-In-Touch {
     background-color: transparent;
     border: 1px solid var(--yellow-color);
     width: 150px;
     font-size: 15px;
 }
-
-.get-In-Touch:hover {
-    background-color: var(--yellow-color);
-    color: black;
-}
-
-.about-info-main {
-    transform: translateY(-25%);
-}
-
-.about-info-main>p {
-    font-size: 50px;
-}
-
-@media screen and (max-width:992px) {
-    .about-info {
-        transform: translateX(0%);
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-info>h2 {
-        transform: translate(0%, -20%);
-    }
-
-}
-
+.left-img{
+    transform: rotate(-15deg) translateX(-25%);
+} */
 /* <!-- -------------------about ends--------------------- --> */
 /* <!-- -------------------expertise starts--------------------- --> */
 .expertise {
