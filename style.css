@@ -12,10 +12,12 @@
     --dark-grey-color: #111111;
     --yellow-color: #E3FF04;
 }
-::selection{
+
+::selection {
     background-color: var(--yellow-color);
     color: #111111;
 }
+
 svg {
     cursor: pointer;
 }
@@ -217,21 +219,64 @@ header nav ul li:hover {
 
 /* <!-- --------------------our games ends--------------------- --> */
 /* <!-- --------------------about starts--------------------- -->  */
-/* .about{
-    margin-top: 100px;
+.about {
+    height: auto;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.about-container{
-    width: 100%;
-}
+
 .get-In-Touch {
     background-color: transparent;
     border: 1px solid var(--yellow-color);
     width: 150px;
     font-size: 15px;
 }
-.left-img{
-    transform: rotate(-15deg) translateX(-25%);
-} */
+
+.about-left-img {
+    transform: rotate(-15deg) translateX(-10%);
+    /* width: 350px; */
+
+
+}
+.about-right-back-img{
+    transform: rotate(-15deg);
+
+}
+.about-right-front-img {
+    transform: rotate(15deg) translateY(-60%);
+ 
+ 
+}
+.about-text>p>strong{
+    color: var(--yellow-color);
+}
+.about-title{
+    font-size: 150px;
+    opacity: 5%;
+    transform: translate(-15%,20%);
+}
+@media screen and (max-width:992px) {
+    .about-title{
+    transform: translate(0%,20%);
+}
+.about-info{
+    padding: 0px 100px;
+}
+.about-right-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
+@media screen and (max-width:576px){
+    .about-info{
+    padding: 90px 40px;
+    
+}
+}
 /* <!-- -------------------about ends--------------------- --> */
 /* <!-- -------------------expertise starts--------------------- --> */
 .expertise {
@@ -266,6 +311,56 @@ header nav ul li:hover {
 .our-expertise-text span svg,
 .why-us-info>span>svg {
     fill: var(--yellow-color);
+}
+
+/* Initially hide the items */
+.game-design-container {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Slight upward movement for effect */
+}
+
+/* Animation class for fade-in */
+.game-design-container.animate {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Define fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply delays to each item when animate class is added */
+.game-design-container[data-delay="0"].animate {
+    animation-delay: 0s;
+}
+
+.game-design-container[data-delay="1"].animate {
+    animation-delay: 0.5s;
+}
+
+.game-design-container[data-delay="2"].animate {
+    animation-delay: 1s;
+}
+
+.get-In-Touch {
+    background-color: transparent;
+    border: 1px solid var(--yellow-color);
+    width: 150px;
+    font-size: 15px;
+}
+
+.get-In-Touch:hover {
+    background-color: var(--yellow-color);
+    color: #111111;
 }
 
 @media screen and (max-width: 990px) {
@@ -326,6 +421,7 @@ header nav ul li:hover {
     opacity: 25%;
 }
 
+
 @media screen and (max-width:680px) {
     .why-us-info-items {
         flex-direction: column;
@@ -351,6 +447,7 @@ header nav ul li:hover {
 .gaming-ai-text {
     margin: 50px 0px;
     width: 110vw;
+   
 }
 
 .gaming-ai-text h6 {
@@ -363,12 +460,41 @@ header nav ul li:hover {
     color: transparent;
     -webkit-text-stroke: 1px white;
 }
-
+@media screen and (max-width:992px) {
+    .gaming-ai-text h6 {
+    font-size: 80px;
+    }
+    .gaming-ai-text span:nth-child(1) {
+    font-size: 80px;
+    }
+}
+@media screen and (max-width:768px) {
+    .gaming-ai-text h6 {
+    font-size: 50px;
+    }
+    .gaming-ai-text span:nth-child(1) {
+    font-size: 50px;
+    }
+}
+@media screen and (max-width:576px) {
+    .gaming-ai-text h6 {
+    font-size: 40px;
+    }
+    .gaming-ai-text span:nth-child(1) {
+    font-size: 40px;
+    }
+}
 /* <!-- -------------------gaming studio ends--------------------- --> */
 /* <!-- -------------------project starts--------------------- --> */
 .project-container {
     margin: 25px 20px;
+    border-bottom: 1px solid grey;
+    padding: 50px 0px;
 
+}
+
+.project-container:hover {
+    border-bottom: 1px solid var(--yellow-color);
 }
 
 .project {
@@ -388,12 +514,6 @@ header nav ul li:hover {
     color: var(--yellow-color);
 }
 
-.project-line {
-    width: 90%;
-    height: 1px;
-    background-color: grey;
-    margin: 0 auto;
-}
 
 @media screen and (max-width:768px) {
     .project-info p {
@@ -582,28 +702,37 @@ a {
 
 /* <!-- -------------------insight ends--------------------- --> */
 /* <!-- -------------------footer starts--------------------- --> */
-.facebook-icon{
+.facebook-icon {
     border: 1px solid white;
     border-radius: 100%;
     width: 30px;
     height: 30px;
 }
-.footer{
+
+.footer {
     background-color: #181818;
-    font-size: 13px !important; 
+    font-size: 13px !important;
     padding-bottom: 50px;
 }
-.footer-main{
+
+.footer-main {
     padding: 70px;
 }
-.muzilla-footer-text p{
+
+.muzilla-footer-text p {
     width: 70%;
 }
-.essential-item span:first-child, .essential-item>span>svg:first-child, .get-in-touch-map span, .get-in-touch-map span svg{
-color: var(--yellow-color);
-fill: var(--yellow-color);
+
+.essential-item span:first-child,
+.essential-item>span>svg:first-child,
+.get-in-touch-map span,
+.get-in-touch-map span svg {
+    color: var(--yellow-color);
+    fill: var(--yellow-color);
 }
-.how-it-works{
+
+.how-it-works {
     color: white !important;
 }
+
 /* <!-- -------------------footer ends--------------------- --> */
