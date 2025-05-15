@@ -441,7 +441,9 @@ header nav ul li:hover {
     width: 110vw;
    
 }
-
+.gaming-ai-text:hover{
+    width: 100vw;
+}
 .gaming-ai-text h6 {
     font-size: 120px;
     font-weight: bolder;
@@ -487,6 +489,7 @@ header nav ul li:hover {
 
 .project-container:hover {
     border-bottom: 1px solid var(--yellow-color);
+    cursor: pointer;
 }
 
 .project {
