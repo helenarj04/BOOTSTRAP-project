@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    /* overflow-y: hidden; */
     color: white;
     transition: all .5s;
 }
@@ -36,7 +35,6 @@ header {
 
 header nav ul {
     border: 3px solid var(--yellow-color);
-    /* gap: 30px; */
     width: 100%;
 
 }
@@ -235,7 +233,6 @@ header nav ul li:hover {
 
 .about-left-img {
     transform: rotate(-15deg) translateX(-10%);
-    /* width: 350px; */
 
 
 }
@@ -313,19 +310,15 @@ header nav ul li:hover {
     fill: var(--yellow-color);
 }
 
-/* Initially hide the items */
 .game-design-container {
     opacity: 0;
     transform: translateY(20px);
-    /* Slight upward movement for effect */
 }
 
-/* Animation class for fade-in */
 .game-design-container.animate {
     animation: fadeIn 1s ease-in forwards;
 }
 
-/* Define fadeIn animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -338,7 +331,6 @@ header nav ul li:hover {
     }
 }
 
-/* Apply delays to each item when animate class is added */
 .game-design-container[data-delay="0"].animate {
     animation-delay: 0s;
 }
@@ -692,10 +684,6 @@ a {
     fill: var(--yellow-color);
 }
 
-/* .indie-img{
-    width: 100%;
-    height: 100%;
-} */
 .indie-text div div>span:nth-child(1) {
     color: var(--yellow-color);
 }
